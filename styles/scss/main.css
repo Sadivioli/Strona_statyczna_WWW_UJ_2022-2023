@@ -817,4 +817,11 @@ body {
 
 .contact {
   position: relative;
+}
+
+.main {
+  height: 100vh;
+  background: url("../../img/bg/reg_log_bg.jpg") top;
+  background-size: cover;
+  position: relative;
 }/*# sourceMappingURL=main.css.map */
