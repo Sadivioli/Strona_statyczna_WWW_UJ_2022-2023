@@ -1,8 +1,91 @@
 
-.main {
+.wrapper {
     height: 100vh;
-    background: url("../../img/bg/reg_log_bg.jpg") top;
+    background: url("../../img/bg/reg_log_bg.jpg") no-repeat top;
     background-size: cover;
     position: relative;
-    
+    h2,h3{
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+    a{
+        color: #333;
+    }
+    .row{
+        max-width: 132rem;
+        width: 132rem;
+        height: 64rem;
+    }
+    &::after{
+        content:"";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        pointer-events: none;
+        backdrop-filter: blur(1px);
+    }
+    .reg-log{
+        background: rgba(255,255,255,0.7);
+        padding: 4rem 2rem;
+        border-radius: 2rem;
+        @include center;
+        z-index: 100;
+
+        .col-1-of-2{
+            position: relative;
+            height: inherit;
+        }
+        .contact{
+            @include center;
+            &__login{
+                top:33%;
+                .form__send{
+                    top: 150%;
+                }
+            }
+            &__reg{
+                top: 52%;
+                .form__send{
+                    top: 105%;
+                }
+            }
+        }
+    }
+    .form{
+        &__input{
+            width: 57.5rem;
+            margin: 0 auto;
+        }
+        &__send{
+            @include center;
+            width: 14.4rem;
+            .btn{
+                margin-bottom: 2rem;
+            }
+            &:last-child a img{
+                transform: rotate(180deg);
+                margin-right: 1rem;
+                margin-left: 0;
+            }
+            div{
+                width: fit-content;
+                margin: 0 auto;
+            }
+        }
+        &__checkbox{
+            margin-right: 1rem;
+        }
+        &__reg__name{
+            max-width: 57.5rem;
+            margin: 0 auto;
+            margin-bottom: 1.6rem;
+            .reg_name{
+                margin-right: 9.7rem;
+            }
+            > div{
+                margin: 0 auto;
+            }
+        }
+    }
 }

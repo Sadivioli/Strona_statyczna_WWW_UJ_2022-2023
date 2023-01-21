@@ -819,9 +819,102 @@ body {
   position: relative;
 }
 
-.main {
+.wrapper {
   height: 100vh;
-  background: url("../../img/bg/reg_log_bg.jpg") top;
+  background: url("../../img/bg/reg_log_bg.jpg") no-repeat top;
   background-size: cover;
   position: relative;
+}
+.wrapper h2, .wrapper h3 {
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+.wrapper a {
+  color: #333;
+}
+.wrapper .row {
+  max-width: 132rem;
+  width: 132rem;
+  height: 64rem;
+}
+.wrapper::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  pointer-events: none;
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+}
+.wrapper .reg-log {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 4rem 2rem;
+  border-radius: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+.wrapper .reg-log .col-1-of-2 {
+  position: relative;
+  height: inherit;
+}
+.wrapper .reg-log .contact {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.wrapper .reg-log .contact__login {
+  top: 33%;
+}
+.wrapper .reg-log .contact__login .form__send {
+  top: 150%;
+}
+.wrapper .reg-log .contact__reg {
+  top: 52%;
+}
+.wrapper .reg-log .contact__reg .form__send {
+  top: 105%;
+}
+.wrapper .form__input {
+  width: 57.5rem;
+  margin: 0 auto;
+}
+.wrapper .form__send {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 14.4rem;
+}
+.wrapper .form__send .btn {
+  margin-bottom: 2rem;
+}
+.wrapper .form__send:last-child a img {
+  transform: rotate(180deg);
+  margin-right: 1rem;
+  margin-left: 0;
+}
+.wrapper .form__send div {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+.wrapper .form__checkbox {
+  margin-right: 1rem;
+}
+.wrapper .form__reg__name {
+  max-width: 57.5rem;
+  margin: 0 auto;
+  margin-bottom: 1.6rem;
+}
+.wrapper .form__reg__name .reg_name {
+  margin-right: 9.7rem;
+}
+.wrapper .form__reg__name > div {
+  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */
