@@ -1,0 +1,64 @@
+.btn{
+    &,&:link,&:visited{
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 4rem;
+        font-size: $def-size;
+        transition: $quick-trans;
+        position: relative;
+        color: #fff;
+
+        //Changes for <button> tag
+        cursor: pointer;
+        border: none;
+        outline: none;
+        font-family: sansation;
+    }
+    &--cta{
+        text-transform: uppercase;
+        padding: 1.5rem 4rem;
+        font-family: sansationBold;
+        font-size: 2rem !important;
+        color: $def-bg !important;
+        background: $main-red;
+        &:hover{
+            transform: translateY(-0.4rem);
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);}
+        &:active,&:focus{
+            transform: translateY(-0.2rem);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);}
+    }
+    &--red{
+        padding: 1rem 3rem;
+        font-size: 1.8rem !important;
+        color: $def-bg !important;
+        background: $main-red;
+        &--blackText{
+            color: #000 !important;
+        }
+    }
+    &--animated{
+        animation: moveInBottom .5s ease-in-out;
+        animation-fill-mode: backwards;}
+    
+}
+.btn--text{
+    &:link,&:visited{
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid #000;
+        padding: 3px;
+        font-size: 1.8rem;
+        transition: $quick-trans;
+    }
+    &:hover{
+        background-color: #000;
+        color: $light-grey-1;
+        box-shadow: 0 .8rem 1.5rem rgba($color: #000000, $alpha: .4);
+        transform: translateY(-2px);
+    }
+    &:active{
+        box-shadow: 0 .5rem 1rem rgba($color: #000000, $alpha: .5);
+        transform: translateY(0);
+    }
+}

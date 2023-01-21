@@ -1,0 +1,20 @@
+.section-contact{
+    background: linear-gradient(to right bottom, rgba($light-grey-1, 0.85), rgba($light-grey-1, 0.85));
+    position: relative;
+    .contact{
+        background: linear-gradient(105deg, 
+                                    rgba(#fff, .6) 70%, 
+                                    transparent 40%),
+                     url("../../img/bg/form_bg.jpg");
+        background-size: cover;
+        border-radius: $rad-xs;
+        box-shadow: 0 1.5rem 4rem rgba(#000, 0.3);
+        &__form{
+            width: 70%;
+            padding: 3rem 6rem ;
+        }
+    }
+}
+.contact{
+    position: relative;
+}

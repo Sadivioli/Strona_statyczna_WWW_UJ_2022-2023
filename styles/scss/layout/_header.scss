@@ -1,0 +1,49 @@
+
+.header {
+    height: 100vh;
+    background: linear-gradient(to right bottom, rgba($dark-grey-1, 0.4), rgba($dark-grey-1, 0.4)), url("../../img/bg/hero.jpg") top;
+    background-size: cover;
+    position: relative;
+    &__line-top{
+        background:#1f1f21;
+        font-size: 1.6rem;
+        ul{
+            a{
+	        color: $def-bg;
+	        margin-left:12px;
+            }
+            li+li{
+                margin-left:4rem;
+            }
+        }
+    }
+    &__logo-box {
+        height: 125px;
+        display: block;
+    }
+    &__text-box {
+        text-align: center;
+        @include center;
+        //override center, for the text to be a little lower
+        top: 60%;
+        width: 90%;
+    }
+}
+.user-icon{
+    display: inline-block;
+    background:url(../../img/icons/lock.png) #181818 no-repeat center;
+    width:43px; /*zmierzone zaznaczaniem prostokatnym w Ps*/
+    height:43px;
+    margin:1rem 1.21rem 1rem 0;
+    border:1px solid #292929;
+}
+.register, .login, .break{
+    color: $main-red;
+    font-family: sansationBold;
+}
+.login, .break{
+    color: $def-bg;
+}
+.break{
+    margin:0 4px;
+}

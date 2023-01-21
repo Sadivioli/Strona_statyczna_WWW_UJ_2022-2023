@@ -1,0 +1,11 @@
+.offers{
+    h2{
+        margin-bottom: 1rem;
+    }
+    &__bg{
+        background: url("../../img/bg/offers_bg.jpg") no-repeat center top;
+        background-size: 120% 100%;
+        height: fit-content;
+        min-height: 100vh;
+    }
+}

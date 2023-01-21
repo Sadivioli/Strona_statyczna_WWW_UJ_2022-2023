@@ -1,0 +1,89 @@
+
+.card{
+
+    //Functionality
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 74rem;
+
+    &__last{
+        height: 80rem;
+    }
+    &__side{
+        height: inherit;
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        border-radius: $rad-xs;
+        overflow: hidden;  //hide everything thats reaching out of parents (this element) border
+        box-shadow: 0 1.5rem 4rem rgba($color: #000, $alpha: .15);
+
+        &--front{
+            background-color: #fff;
+            .last__spots-remainig{
+                background-color: $main-yellow;
+                color: $main-red;
+                font-family: sansationBold;
+                text-transform: uppercase;
+                font-size: 2rem;
+                display: block;
+                text-align: center;
+                padding: 0.7rem 0;
+            }
+        }
+    }
+    //Front card styling
+    &__picture{
+        background-size: cover;
+        height: 28rem;
+        background-blend-mode: screen; //blends things together, so no need to do all in PS
+        position: relative;
+
+        &--1{
+            background-image: url(../../img/reg/sug1.jpg);
+        }
+        &--2{
+            background-image: url(../../img/reg/sug2.jpg);
+        }
+        &--3{
+            background-image: url(../../img/reg/sug3.jpg);
+        }
+    }
+
+
+    &__details{
+        ul{
+            list-style-type: none;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            li{
+                font-size: 1.5rem;
+                padding: 1.7rem 0;
+                &:not(:last-child){
+                    border-bottom: 1px solid $dark-grey-2;
+                }
+            }
+        }
+    }
+
+    &__cta{
+        text-align: center;
+    }
+    &__price-box{
+        text-align: center;
+        color: $main-red;
+    }
+    &__price-value{
+        font-size: 4rem;
+        padding: 1.8rem 0;
+        font-family: sansationBold;
+    }
+    &__bottom{
+        padding: 3.1rem 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+}

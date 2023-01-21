@@ -1,0 +1,56 @@
+.form{
+    &__group:not(:last-child){
+        margin-bottom: 2rem;
+    }
+    &__input{
+        padding: 1.5rem 2rem;
+        font-size: $def-size;
+        border-radius: $rad-xs;
+        font-family: inherit;
+        color: inherit;
+        background-color: rgba($color: #fff, $alpha: .9);
+        border: none;
+        display: block;
+        border-bottom: 3px solid transparent;
+        width: 90%;
+
+        &:focus{
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color: #000, $alpha: .1);
+            border-bottom: 3px solid $main-green;
+        }
+        &:focus:invalid{
+            border-bottom: 3px solid #ff0000;
+        }
+        &::-webkit-input-placeholder{
+            color: #999;
+        }
+        &:last-child{
+            height: 22rem;
+        }
+    }
+    &__label{
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin-left: 2rem;
+        display: block;
+        transition: $med-trans;
+    }
+
+    &__input:placeholder-shown + &__label{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+    }
+    &__send{
+        position: absolute;
+        right: 5rem;
+        bottom: 4rem;
+        .btn{
+            padding: 1.5rem 3rem;
+        }
+        img{
+            margin-left: 1.5rem;
+        }
+    }
+}

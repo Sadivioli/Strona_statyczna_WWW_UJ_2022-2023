@@ -1,0 +1,19 @@
+.nav{
+    height: fit-content;
+    &__list{
+        list-style-type: none;
+        font-size: 2rem;
+        display: flex;
+    }
+    &__item{
+        
+        padding: 0 2rem;
+    }
+    &__link{
+        transition: $med-trans;
+        &:hover, &:active{
+            color: $main-yellow;
+        }
+    }
+    
+}

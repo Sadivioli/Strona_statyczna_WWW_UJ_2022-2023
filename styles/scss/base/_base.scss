@@ -1,0 +1,26 @@
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: sansation, sans-serif;
+}
+body{
+    box-sizing: border-box;
+    font-size: $def-size;
+    background-color: $def-bg;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: $def-bg;
+}
+ul{
+    list-style-type: none;
+}
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
