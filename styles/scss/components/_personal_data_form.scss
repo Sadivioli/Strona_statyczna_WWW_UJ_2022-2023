@@ -1,0 +1,16 @@
+.popup__personal{
+    //display: block !important;
+    .contact__form{
+        position: relative;
+        width: 42rem;
+        margin: 4rem auto 0;
+        background-color: $def-bg;
+        padding: 2rem 4rem 10rem;
+        border-radius:2rem;
+        .pers__info{
+            @include center;
+            width: fit-content;
+            top: 85%;
+        }
+    }
+}

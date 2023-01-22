@@ -300,6 +300,25 @@ body {
   justify-content: space-around;
 }
 
+.popup__personal .contact__form {
+  position: relative;
+  width: 42rem;
+  margin: 4rem auto 0;
+  background-color: #f0f0f0;
+  padding: 2rem 4rem 10rem;
+  border-radius: 2rem;
+}
+.popup__personal .contact__form .pers__info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  top: 85%;
+}
+
 .btn, .btn:link, .btn:visited {
   text-decoration: none;
   display: inline-block;
@@ -1028,7 +1047,7 @@ body {
   height: fit-content;
 }
 .book .form__reg__name input {
-  max-width: 15rem;
+  max-width: 24rem;
   height: 3rem;
   padding: 2.5rem;
 }
