@@ -1,0 +1,93 @@
+.aside{
+    background: #333;
+    height: 100vh;
+    width: 35rem;
+    position: relative;
+    &__logo-box{
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+        padding: 6rem 0;
+    }
+    &__nav{
+        .nav__list{
+            flex-direction: column;
+            text-align: center;
+            .nav__item{
+                padding:1rem;
+            }
+        }
+    }
+    > ul{
+        text-align: center;
+        @include center;
+        min-width: 75%;
+        top: 85rem;
+    }
+    &__personal{
+        background-color: #fff;
+        height: inherit;
+        text-align: center;
+        padding: 6rem 0;
+    }
+}
+.dash__main{
+    height: 100vh;
+    width: calc(100% - 700px);
+    background: $def-bg;
+    h1,h2,h3,h4{
+        color: #333;
+    }
+    h4{
+        text-transform: none;
+        margin-bottom: 2rem;
+    }
+    .compleated div{
+        display: none;
+    }
+    .tour-tile{
+        background:#BDBDBD;
+        padding: 2rem 3rem;
+        width: 90%;
+        margin: 0 auto;
+        a{
+            color: #333;
+        }
+        h4{
+            margin: 0;
+        }
+    }
+    .pref{
+        &__list{
+            display: flex;
+            flex-direction: column;
+            margin-left: 5rem;
+            &__elem--unselected, &__elem--unselected{
+                display:block;
+                width: 15rem;
+                background-color: #fff;
+                padding: 1rem 2rem;
+                text-align: center;
+                border-radius: 1rem;
+                margin: 1rem 0;
+            }
+            &__elem--selected{
+                background-color: $main-green;
+                color: #fff;
+            }
+            .disabled{
+                width: 6.2rem;
+                padding: 1rem;
+                margin: 1rem 1rem 1rem 0;
+            }
+            .form__checkbox{
+                margin-right: 1rem;
+            }
+        }
+        
+    }
+    .credit{
+        max-width: 65%;
+        font-family: sansationBold;
+    }
+}

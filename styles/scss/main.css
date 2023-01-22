@@ -271,6 +271,14 @@ body {
   margin-top: 8rem;
 }
 
+.u-margin-top-med {
+  margin-top: 4rem;
+}
+
+.u-margin-top-small {
+  margin-top: 1.2rem;
+}
+
 .u-padding-top-med {
   padding-top: 4rem;
 }
@@ -329,6 +337,13 @@ body {
 }
 .btn--red--blackText {
   color: #000 !important;
+}
+.btn--blue {
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  font-size: 1.8rem !important;
+  color: #f0f0f0 !important;
+  background: #4A4BEB;
 }
 .btn--animated {
   -webkit-animation: moveInBottom 0.5s ease-in-out;
@@ -788,6 +803,14 @@ body {
   margin: 0 auto;
 }
 
+.flex-wrapper {
+  display: flex;
+}
+
+.med-padding-wrap {
+  padding: 6rem 6rem 0 6rem;
+}
+
 .offers h2 {
   margin-bottom: 1rem;
 }
@@ -817,6 +840,101 @@ body {
 
 .contact {
   position: relative;
+}
+
+.aside {
+  background: #333;
+  height: 100vh;
+  width: 35rem;
+  position: relative;
+}
+.aside__logo-box {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 6rem 0;
+}
+.aside__nav .nav__list {
+  flex-direction: column;
+  text-align: center;
+}
+.aside__nav .nav__list .nav__item {
+  padding: 1rem;
+}
+.aside > ul {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 75%;
+  top: 85rem;
+}
+.aside__personal {
+  background-color: #fff;
+  height: inherit;
+  text-align: center;
+  padding: 6rem 0;
+}
+
+.dash__main {
+  height: 100vh;
+  width: calc(100% - 700px);
+  background: #f0f0f0;
+}
+.dash__main h1, .dash__main h2, .dash__main h3, .dash__main h4 {
+  color: #333;
+}
+.dash__main h4 {
+  text-transform: none;
+  margin-bottom: 2rem;
+}
+.dash__main .compleated div {
+  display: none;
+}
+.dash__main .tour-tile {
+  background: #BDBDBD;
+  padding: 2rem 3rem;
+  width: 90%;
+  margin: 0 auto;
+}
+.dash__main .tour-tile a {
+  color: #333;
+}
+.dash__main .tour-tile h4 {
+  margin: 0;
+}
+.dash__main .pref__list {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5rem;
+}
+.dash__main .pref__list__elem--unselected, .dash__main .pref__list__elem--unselected {
+  display: block;
+  width: 15rem;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  text-align: center;
+  border-radius: 1rem;
+  margin: 1rem 0;
+}
+.dash__main .pref__list__elem--selected {
+  background-color: #4AB239;
+  color: #fff;
+}
+.dash__main .pref__list .disabled {
+  width: 6.2rem;
+  padding: 1rem;
+  margin: 1rem 1rem 1rem 0;
+}
+.dash__main .pref__list .form__checkbox {
+  margin-right: 1rem;
+}
+.dash__main .credit {
+  max-width: 65%;
+  font-family: sansationBold;
 }
 
 .wrapper {
@@ -893,7 +1011,7 @@ body {
 .wrapper .form__send .btn {
   margin-bottom: 2rem;
 }
-.wrapper .form__send:last-child a img {
+.wrapper .form__send a:last-child img {
   transform: rotate(180deg);
   margin-right: 1rem;
   margin-left: 0;

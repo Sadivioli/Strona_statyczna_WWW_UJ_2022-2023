@@ -37,6 +37,13 @@
             color: #000 !important;
         }
     }
+    &--blue{
+        border-radius: 1rem;
+        padding: 1rem 2rem;
+        font-size: 1.8rem !important;
+        color: $def-bg !important;
+        background: $main-blue;
+    }
     &--animated{
         animation: moveInBottom .5s ease-in-out;
         animation-fill-mode: backwards;}

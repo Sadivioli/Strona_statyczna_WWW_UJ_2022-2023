@@ -27,13 +27,13 @@
                                 </div>
                                 <form action="#" method="post" class="form form__login">
                                     <div class="form__group">
-                                        <input type="text" class="form__input" name="" required id="full_name" placeholder="Adres e-mail">
-                                        <label for="full_name" class="form__label">Adres e-mail</label>
+                                        <input type="email" class="form__input" name="" required id="email" placeholder="Adres e-mail">
+                                        <label for="email" class="form__label">Adres e-mail</label>
                                        </div>
                                     <div class="form__group">
-                                        <input type="email" class="form__input" name="" required id="mail" placeholder="Hasło">
+                                        <input type="password" class="form__input" name="" required id="password" placeholder="Hasło">
                                         
-                                        <label for="mail" class="form__label">Hasło</label>
+                                        <label for="password" class="form__label">Hasło</label>
                                     </div>
                                     <div class="u-pararell u-space-between">
                                         <div class="u-pararell">
@@ -43,12 +43,14 @@
                                         <!-- Pojawi sie popup mówiący, żeby wpisać maila, jeśli zostanie znaleziny w bazie to zostanie wysłany na niego link -->
                                     </div>
                                     <div class="form__send">
-                                        <button class="btn btn--red">
-                                            <div class="u-pararell">
-                                                Zaloguj
-                                                <img src="../../img/icons/right-arrow-white.png" alt="" width="20">
-                                            </div>
-                                        </button>
+                                        <a href="dash.html">
+                                            <button class="btn btn--red">
+                                                <div class="u-pararell">
+                                                    Zaloguj
+                                                    <img src="../../img/icons/right-arrow-white.png" alt="" width="20">
+                                                </div>
+                                            </button>
+                                        </a>
                                         <a href="index.html">
                                             <div class="u-pararell"><img src="../../img/icons/right-arrow.png" alt="" width="20">Wróć</div>
                                         </a>
@@ -73,25 +75,27 @@
                                 <form action="#" method="post" class="form form__reg">
                                     <div class="form__reg__name">
                                         <div class="form__group u-pararell">
-                                            <input type="text" class="form__input  reg_name" name="" required id="full_name" placeholder="Imie (np. Adam)*">
-                                            <label for="full_name" class="form__label">Imie</label>
+                                            <input type="text" class="form__input  reg_name" name="" required id="fisrt_name" placeholder="Imie (np. Adam)*">
                                             
-                                            <input type="email" class="form__input" name="" required id="mail" placeholder="Nazwisko (np. Nowak)*">
-                                            <label for="mail" class="form__label">Nazwisko</label>
+                                            <label for="mail" class="form__label">&nbsp;</label>
+                                            
+                                            <input type="text" class="form__input" name="" required id="last_name" placeholder="Nazwisko (np. Nowak)*">
+                                            
+                                            <label for="mail" class="form__label">&nbsp;</label>
                                         </div>
                                         <label for="mail" class="form__label">&nbsp;</label>
                                     </div>
                                     <div class="form__group">
-                                        <input type="email" class="form__input" name="" required id="mail" placeholder="Adres e-mail*">
-                                        <label for="mail" class="form__label">Adres e-mail*</label>
+                                        <input type="email" class="form__input" name="" required id="email" placeholder="Adres e-mail*">
+                                        <label for="email" class="form__label">Adres e-mail*</label>
                                     </div>
                                     <div class="form__group">
-                                        <input type="email" class="form__input" name="" required id="mail" placeholder="Hasło*">
-                                        <label for="mail" class="form__label">Hasło*</label>
+                                        <input type="password" class="form__input" name="" required id="password" placeholder="Hasło*">
+                                        <label for="password" class="form__label">Hasło*</label>
                                     </div>
                                     <div class="form__group">
-                                        <input type="email" class="form__input" name="" required id="mail" placeholder="Powtórz hasło*">
-                                        <label for="mail" class="form__label">Powtórz hasło*</label>
+                                        <input type="password" class="form__input" name="" required id="passwordRep" placeholder="Powtórz hasło*">
+                                        <label for="passwordRep" class="form__label">Powtórz hasło*</label>
                                     </div>
                                     <div class="u-pararell">
                                         <input type="checkbox" name="regulamin" class="form__checkbox"><label for="regulamin">Zapoznałem/am się z regulaminem i akceptuje jego warunki</label>
