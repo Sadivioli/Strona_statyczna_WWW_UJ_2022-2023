@@ -338,12 +338,15 @@ body {
 .btn--red--blackText {
   color: #000 !important;
 }
-.btn--blue {
+.btn--blue, .btn--tame-red {
   border-radius: 1rem;
   padding: 1rem 2rem;
   font-size: 1.8rem !important;
   color: #f0f0f0 !important;
   background: #4A4BEB;
+}
+.btn--tame-red {
+  background: #f22457;
 }
 .btn--animated {
   -webkit-animation: moveInBottom 0.5s ease-in-out;
@@ -840,6 +843,72 @@ body {
 
 .contact {
   position: relative;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 3000;
+  background: rgba(0, 0, 0, 0.9);
+}
+.popup .card__details ul li:first-child {
+  font-family: sansationBold;
+  color: #F2013F;
+}
+.popup .card__details ul {
+  min-width: 15rem;
+}
+.popup .row {
+  margin: 0;
+}
+.popup__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  background: #fff;
+  border-radius: 2rem;
+  overflow: hidden;
+  max-height: 50rem;
+  display: table;
+}
+.popup__left {
+  width: 33%;
+  display: table-cell;
+}
+.popup__pic {
+  width: 100%;
+  display: block;
+}
+.popup__right {
+  width: 67%;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 4rem;
+}
+.popup__text {
+  -moz-column-count: 2;
+       column-count: 2;
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
+  -moz-column-rule: 1px solid #f0f0f0;
+       column-rule: 1px solid #f0f0f0;
+  hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+}
+.popup .card__price-value {
+  color: #F2013F;
+  text-align: center;
+}
+.popup a p {
+  color: #333;
 }
 
 .aside {
