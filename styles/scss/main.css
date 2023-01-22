@@ -1006,6 +1006,36 @@ body {
   font-family: sansationBold;
 }
 
+.book__row {
+  height: 80rem !important;
+}
+.book .card__details ul {
+  min-width: 15rem;
+}
+.book .book__send {
+  width: 100% !important;
+}
+.book .back__arr {
+  height: -webkit-fit-content !important;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
+  top: 95% !important;
+}
+.book .aside__personal {
+  background: transparent;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.book .form__reg__name input {
+  max-width: 15rem;
+  height: 3rem;
+  padding: 2.5rem;
+}
+.book .book_btn {
+  width: 21rem;
+}
+
 .wrapper {
   height: 100vh;
   background: url("../../img/bg/reg_log_bg.jpg") no-repeat top;

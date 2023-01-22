@@ -1,0 +1,29 @@
+.book{
+    &__row{
+        height: 80rem !important;
+    }
+    .card__details ul{
+        min-width: 15rem;
+    }
+    .book__send{
+        width: 100% !important;
+    }
+    .back__arr{
+        height: fit-content !important;
+        top: 95% !important;
+    }
+    .aside__personal{
+        background: transparent;
+        height: fit-content;
+    }
+    .form__reg__name{
+        input{
+            max-width: 15rem;
+            height: 3rem;
+            padding: 2.5rem;
+        }
+    }
+    .book_btn{
+        width: 21rem;
+    }
+}
