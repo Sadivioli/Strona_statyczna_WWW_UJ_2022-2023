@@ -1025,6 +1025,18 @@ body {
   font-family: sansationBold;
 }
 
+.dash__admin .contact__form {
+  width: 96.5rem;
+}
+.dash__admin .form__group:not(:last-child) {
+  margin-bottom: 0 !important;
+}
+.dash__admin__form__submit {
+  position: absolute;
+  left: 0;
+  bottom: -5rem;
+}
+
 .book__row {
   height: 80rem !important;
 }

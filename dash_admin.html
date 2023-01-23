@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Joti+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/scss/main.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        
+        <title>Tęcza | Wycieczki grupowe dla każdego</title>
+    </head>
+    <body>
+        <div class="flex-wrapper">
+        <aside class="aside">
+            <div class="aside__logo-box">
+                <img src="img/logo.png" alt="Logo of our Company" class="header__logo">
+            </div>
+            <nav class="aside__nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Strona główna</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#section-offers-id" class="nav__link">Oferta</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#section-last-id" class="nav__link">Ostatnie miejsca</a>
+                        </li>
+                    <li class="nav__item">
+                        <a href="index.html#section-faq-id" class="nav__link">FAQ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#section-faq-id" class="nav__link">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul>
+                <li>
+                    <img src="../../img/icons/phone.png" alt="" />
+                    <a href="tel:+4811123456789">+48 123 456 789</a>
+                </li>
+                <li>
+                    <img src="../../img/icons/placeholder.png" alt="" />
+                    <a href="http://maps.google.com/?q=Kraków+Miodowa+34" target="blank">Kraków, ul. Miodowa 34</a>
+                </li>
+            </ul>
+        </aside>
+        <main class="dash__main dash__admin">
+            <div class="med-padding-wrap">
+                <h1 class="heading-primary">
+                    Panel Admina
+                </h1>
+                <h3 class="heading-tertiary">
+                    dodaj wycieczkę
+                </h3>
+                <div class="contact">
+                    <div class="contact__form">
+                        <div class="u-margin-bottom-med">
+                            
+                        </div>
+                        <form action="#" method="post" class="form">
+                            <div class="form__group">
+                                <input type="text" class="form__input" name="kraj" required id="kraj" placeholder="Kraj">
+                                <label for="full_name" class="form__label">Kraj</label>
+                            </div>
+                            <div class="form__group">
+                                <input type="text" class="form__input" name="miasto" required id="miasto" placeholder="Miasto">
+                                <label for="full_name" class="form__label">Miasto</label>
+                            </div>
+                            <div class="form__reg__name dash__admin__form">
+                                <div class="form__group u-pararell">
+                                    <div class="form__group dash__admin__form__group">
+                                        <input type="number" class="form__input" name="dlimit" required id="dlimit" placeholder="Dolny limit osób">
+                                        <label for="full_name" class="form__label">Dolny limit osób</label>
+                                    </div>
+                                    <div class="form__group">
+                                        <input type="number" class="form__input" name="glimit" required id="glimit" placeholder="Górny limit osób">
+                                        <label for="full_name" class="form__label">Górny limit osób</label>
+                                    </div>
+                                    <div class="form__group">
+                                        <input type="number" class="form__input" name="cena" required id="cena" placeholder="Cena">
+                                        <label for="full_name" class="form__label">Cena</label>
+                                    </div>
+                                    <div class="form__group">
+                                        <input type="number" class="form__input" name="dl" required id="dl" placeholder="Długość">
+                                        <label for="full_name" class="form__label">Długość</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form__group">
+                                <input type="number" class="form__input" name="wypo" required id="wypo" placeholder="Wypoczynek">
+                                <label for="full_name" class="form__label">Wypoczynek</label>
+                            </div>
+                            <div class="form__group">
+                                <input type="number" class="form__input" name="akt" required id="akt" placeholder="Aktywność">
+                                <label for="full_name" class="form__label">Aktywność</label>
+                            </div>
+                            <div class="form__group">
+                                <input type="number" class="form__input" name="zwie" required id="zwie" placeholder="Zwiedzanie">
+                                <label for="full_name" class="form__label">Zwiedzanie</label>
+                            </div>
+                            <div class="form__send dash__admin__form__submit">
+                                <input type="submit" value="Dodaj wycieczkę" class="btn btn--red">
+                                    
+                                </input>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </main>
+        <aside class="aside">
+            
+        </aside>
+        </div>
+        <div class="popup popup__personal">
+        <div class="contact contact__reg">
+            <div class="contact__form contact__form__reg">
+                <div class="u-margin-bottom-med">
+                    
+                </div>
+                <form action="#" method="post" class="form form__reg">
+                    <div class="form__reg__name">
+                        <div class="form__group u-pararell">
+                            <input type="text" class="form__input  reg_name" name="" required id="fisrt_name" placeholder="Imie (np. Adam)*">
+                            
+                            <label for="mail" class="form__label">&nbsp;</label>
+                            
+                            <input type="text" class="form__input" name="" required id="last_name" placeholder="Nazwisko (np. Nowak)*">
+                            
+                            <label for="mail" class="form__label">&nbsp;</label>
+                        </div>
+                        <label for="mail" class="form__label">&nbsp;</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="email" class="form__input" name="" required id="email" placeholder="Adres e-mail*">
+                        <label for="email" class="form__label">Adres e-mail*</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="text" class="form__input" name="" required id="adres" placeholder="Adres zamieszkania*">
+                        <label for="adres" class="form__label">Adres zamieszkania</label>
+                    </div>
+                    <div class="form__group">
+                            <input type="text" class="form__input  reg_name" name="" required id="fisrt_name" placeholder="Kod pocztowy*">
+                            
+                            <label for="mail" class="form__label">&nbsp;</label>
+                    </div>
+                    <div class="form__group">
+                            <input type="text" class="form__input" name="" required id="last_name" placeholder="nr.telefonu*">
+                            
+                            <label for="mail" class="form__label">&nbsp;</label>
+                    </div>
+                    <div class="form__reg__name">
+                        <div class="form__group u-pararell">
+                            <input type="text" class="form__input  reg_name" name="" required id="fisrt_name" placeholder="Data urodzenia">
+                            
+                            <label for="mail" class="form__label">&nbsp;</label>
+                        </div>
+                        <label for="mail" class="form__label">&nbsp;</label>
+                    </div>
+                    <p>* pola oznaczone gwiazdką są obowiązkowe</p>
+                    <div class="form__send book__send u-margin-top-med pers__info">
+                        <input type="submit" value="Zapisz" class="btn btn--red">
+                        </input>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>

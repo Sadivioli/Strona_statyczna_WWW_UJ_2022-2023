@@ -91,3 +91,16 @@
         font-family: sansationBold;
     }
 }
+.dash__admin{
+    .contact__form{
+        width: 96.5rem;
+    }
+    .form__group:not(:last-child) {
+        margin-bottom: 0 !important;
+    }
+    &__form__submit{
+        position: absolute;
+        left: 0;
+        bottom: -5rem;
+    }
+}
