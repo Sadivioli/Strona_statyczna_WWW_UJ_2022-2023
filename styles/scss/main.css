@@ -860,14 +860,12 @@ body {
 }
 
 .popup {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
   z-index: 3000;
-  background: rgba(0, 0, 0, 0.9);
 }
 .popup .card__details ul li:first-child {
   font-family: sansationBold;
@@ -904,6 +902,12 @@ body {
   display: table-cell;
   vertical-align: middle;
   padding: 0 4rem;
+}
+.popup__right .form__group {
+  width: 20rem;
+}
+.popup__right .form__group .form__input {
+  width: 20rem;
 }
 .popup__text {
   -moz-column-count: 2;
