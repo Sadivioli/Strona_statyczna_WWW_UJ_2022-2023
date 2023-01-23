@@ -73,3 +73,15 @@
         transform: translateY(0);
     }
 }
+
+.centered__back__btn{
+    div{
+        margin-top: 2rem;
+        width:14.5rem;
+        justify-content: center;
+        img{
+            transform: rotate(180deg);
+            margin-right: 1rem;
+        }
+    }
+}

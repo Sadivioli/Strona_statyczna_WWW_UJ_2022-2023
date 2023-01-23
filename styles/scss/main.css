@@ -279,6 +279,10 @@ body {
   margin-top: 1.2rem;
 }
 
+.u-negative-margin {
+  margin-top: -3rem;
+}
+
 .u-padding-top-med {
   padding-top: 4rem;
 }
@@ -303,7 +307,7 @@ body {
 .pers__info {
   width: 12rem !important;
   height: 5rem;
-  top: 87% !important;
+  top: 83% !important;
 }
 
 .pers__info__wrapper {
@@ -386,6 +390,16 @@ body {
 .btn--text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
   transform: translateY(0);
+}
+
+.centered__back__btn div {
+  margin-top: 2rem;
+  width: 14.5rem;
+  justify-content: center;
+}
+.centered__back__btn div img {
+  transform: rotate(180deg);
+  margin-right: 1rem;
 }
 
 .card--small {
