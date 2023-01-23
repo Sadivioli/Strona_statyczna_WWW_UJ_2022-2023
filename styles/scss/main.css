@@ -300,23 +300,18 @@ body {
   justify-content: space-around;
 }
 
-.popup__personal .contact__form {
-  position: relative;
-  width: 42rem;
-  margin: 4rem auto 0;
-  background-color: #f0f0f0;
-  padding: 2rem 4rem 10rem;
-  border-radius: 2rem;
+.pers__info {
+  width: 12rem !important;
+  height: 5rem;
+  top: 87% !important;
 }
-.popup__personal .contact__form .pers__info {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  top: 85%;
+
+.pers__info__wrapper {
+  width: 62rem;
+  height: 85rem;
+}
+.pers__info__wrapper .form__group {
+  width: 58rem !important;
 }
 
 .btn, .btn:link, .btn:visited {
